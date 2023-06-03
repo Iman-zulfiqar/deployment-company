@@ -5,37 +5,36 @@
 }
 html {
   font-size: 62.5%;
+ 
   // 1rem= 10px;
 }
 body::-webkit-scrollbar {
   display: none;
 }
 .root {
-  width: 100%;
+  width: 100vw;
   height: 100%;
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
-  background: linear-gradient(42.43deg, #c6dbff 0%, #e1ebfa 52.25%);
+  // display: initial;
+  background: linear-gradient(42.43deg, #a9c2ed 0%, #c0d0e9 52.25%);
+  .haeder-div{
+    width: 100vw;
+    position: fixed;
+    z-index: 40;
+   top: 1%;
+   transition: top 0.6s ease-in-out ;
+
+  }
+ .scroll{
+  background-color: white;
+  transition: top 0.3s ease-in-out ;
+  box-shadow: 0.1px 0.1px 100px #323d3e;
+  top: 0%;
 }
-.final-el {
-  max-width: 1440px;
-  width: 100%;
-  margin: 0 auto;
-  // border: 1px solid red;
-  padding: 30px;
-}
-.containe {
-  width: 100%;
-
-  background: url("figure.svg") no-repeat top right;
-
-  min-height: 899px;
-  display: flex;
-  flex-direction: column;
-  gap: 80px;
-
   .navbar {
+
     i {
       color: #4397a4;
       font-size: 30px;
@@ -43,14 +42,16 @@ body::-webkit-scrollbar {
       right: 10%;
       display: none;
     }
+    padding: 3.5rem;
     max-width: 1180px;
     width: 100%;
+    transition: 0.6s ease;
     height: 50px;
-    transition: transform 0.9s ease-out;
-
+   
+   
     // gap: 80px;
     margin: 0px auto;
-    margin-top: 20px;
+    // margin-top: 20px;
     display: flex;
     flex-wrap: nowrap;
     // justify-content: space-evenly;
@@ -108,6 +109,10 @@ body::-webkit-scrollbar {
         // left: 12px;
       }
       li {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
         a {
           text-decoration: none;
           font-family: "Noto Sans";
@@ -115,8 +120,32 @@ body::-webkit-scrollbar {
           font-weight: 500;
           font-size: 1.6rem;
           color: #678c92;
+          position: relative;
+          animation-name: nav;
+          transition: color 0.6s ease;
+        }
+        a:after{
+          content: '';
+          width: 0%;
+          height: 2px;
+          background-color: #486a6f;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          transition: width 0.3s ease;
+          margin-top: 10px;
+        }
+        a:hover:after{
+          width: 100%;
+        }
+        a:hover{
+          color: #486a6f;
         }
       }
+     li:hover  hr{
+      color: red;
+     }
+      
     }
     button {
       margin-top: -5px;
@@ -137,6 +166,25 @@ body::-webkit-scrollbar {
       // transform: translateX(0px);
     }
   }
+}
+.final-el {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  // border: 1px solid red;
+  padding: 120px 30px 30px 30px;
+}
+.containe {
+  width: 100%;
+  background: linear-gradient(42.43deg, #b2c5e7 0%, #c0d0e9 52.25%);
+  // background: ;
+  // background-blend-mode: multiply;
+
+  min-height: 899px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+ 
   .home-content {
     max-width: 1180px;
     width: 100%;
@@ -311,11 +359,14 @@ body::-webkit-scrollbar {
   .navbar {
     max-width: 1200px;
     width: 100%;
+    overflow-x: auto;
     // height: 123px;
     border-top: 1px solid #678c92;
     border-bottom: 1px solid #678c92;
     padding: 20px;
     display: flex;
+    flex-wrap: nowrap;
+ 
     gap: 40px;
     justify-content: center;
     margin: 0 auto;
@@ -730,7 +781,7 @@ body::-webkit-scrollbar {
   }
 
   .root {
-    .containe {
+    .haeder-div {
       .navbar {
         // margin-top: -20px;
         .logo {
@@ -746,7 +797,7 @@ body::-webkit-scrollbar {
   }
 }
 @media (max-width: 900px) {
-  .containe {
+  .haeder-div {
     .navbar {
       i {
         display: inline;
@@ -781,7 +832,7 @@ body::-webkit-scrollbar {
         gap: 0px;
         // gap: 10px;
         background: #f4f7ff;
-        overflow: hidden;
+        // overflow: hidden;
 
         li {
           // margin-top: 100%;
@@ -789,7 +840,7 @@ body::-webkit-scrollbar {
           // margin: 0;
           text-align: center;
           padding: 30px;
-          width: 300px;
+          width: 200px;
 
           border-bottom: 1px solid #ffff;
           a {

@@ -24,12 +24,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Document</title>
   </head>
   <body>
     <div class="root">
-      <div class="containe final-el">
-        <div class="navbar">
+      <div class="haeder-div header "  >
+        <div class="navbar ">
           <i class="fa fa-bars" aria-hidden="true"></i>
           <div class="logo">
             <div id="img"></div>
@@ -46,22 +47,25 @@
 
           <button class="btn t">Need a project?</button>
         </div>
+       </div>
+      <div class="containe final-el">
+    
         <div class="home-content">
           <div class="home-text">
             <div>
-              <h1>Development company</h1>
+              <h1 data-aos="fade-up">Development company</h1>
               <br />
-              <p>
+              <p data-aos="fade-up">
                 Forward-thinking real estate developer, owner and investor with
                 a reputation
               </p>
             </div>
             <div id="btns">
-              <button class="btn b1">Services</button>
-              <button class="btn b2">About the company</button>
+              <button  class="btn b1">Services</button>
+              <button  class="btn b2">About the company</button>
             </div>
           </div>
-          <div class="home-img">
+          <div class="home-img" data-aos="fade-left">
             <img src="Photos.png" alt="" />
           </div>
         </div>
@@ -69,19 +73,19 @@
     </div>
     <div class="root2" id="container2">
       <div class="container2 final-el">
-        <h1>Innovative Execution</h1>
+        <h1 data-aos="fade-up">Innovative Execution</h1>
         <div id="inner-divs">
-          <div>
+          <div data-aos="fade-up">
             <img src="Icon.png" alt="" />
             <h1>Featured Listing</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
-          <div>
+          <div data-aos="fade-up">
             <img src="Icon1.png" alt="" />
             <h1>Available Properties</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
-          <div>
+          <div data-aos="fade-up">
             <img src="Icon2.png" alt="" />
             <h1>In the News</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -99,8 +103,8 @@
           <img src="Vector.png" alt="" />
         </div>
         <div class="car">
-          <img src="oto.png" alt="  " />
-          <div>
+          <img src="oto.png" data-aos="fade-right" alt="  " />
+          <div data-aos="fade-left">
             <small>About us</small>
             <h1>Owner and investor with a reputation</h1>
             <p>
@@ -118,7 +122,7 @@
     </div>
     <div class="root4">
       <div class="container4 final-el">
-        <div>
+        <div data-aos="fade-right">
           <small>Available Properties</small>
           <h1>Featured Listing</h1>
           <p>
@@ -131,41 +135,41 @@
           </p>
           <button class="btn">Explore</button>
         </div>
-        <img src="Photos2.png" alt="" />
+        <img src="Photos2.png" data-aos="fade-left" alt="" />
       </div>
     </div>
     <div class="root5" id="container5">
       <div class="container5 final-el">
-        <small>Socials</small>
-        <h1>On Instagram</h1>
+        <small data-aos="fade-up">Socials</small>
+        <h1 data-aos="fade-up">On Instagram</h1>
         <div class="row">
-          <img
+          <img data-aos="zoom-in-down"
             class="col-xxl-4 col-xl-3 col-lg-3 col-md-3 col-sm-3"
             src="Card.png"
             alt=""
           />
-          <img
+          <img data-aos="zoom-in-down"
             class="col-xxl-4 col-xl-3 col-lg-3 col-md-3 col-sm-3"
             src="Photo.png"
             alt=""
           />
-          <img
+          <img data-aos="zoom-in-down"
             class="col-xxl-4 col-xl-3 col-lg-3 col-md-3 col-sm-3"
             src="Photo (1).png"
             alt=""
           />
 
-          <img
+          <img data-aos="zoom-in-down"
             class="col col-xxl-4 col-xl-3 col-lg-3 col-md-3 col-sm-3"
             src="Photo (2).png"
             alt=""
           />
-          <img
+          <img data-aos="zoom-in-down"
             class="col col-xxl-4 col-xl-3 col-lg-3 col-md-3 col-sm-3"
             src="Photo (3).png"
             alt=""
           />
-          <img
+          <img data-aos="zoom-in-down"
             class="col col-xxl-4 col-xl-3 col-lg-3 col-md-3 col-sm-3"
             src="Photo (4).png"
             alt=""
@@ -175,7 +179,7 @@
     </div>
     <div class="root6" id="container6">
       <div class="container6 final-el">
-        <div class="contact">
+        <div class="contact" data-aos="fade-right">
           <small>Contact</small>
           <h1>Get In Touch</h1>
 
@@ -197,7 +201,7 @@
             </p>
           </div>
         </div>
-        <form action="" class="row">
+        <form action="" class="row" data-aos="flip-left">
           <div class="col-6">
             <label for="">Name </label><br />
             <br />
@@ -282,6 +286,15 @@
         </p>
       </div>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init(
+        {
+          offset: 230,
+          duration: 1000
+        }
+      );
+    </script>
     <script src="script.js"></script>
   </body>
 </html>

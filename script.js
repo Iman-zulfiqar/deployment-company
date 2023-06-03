@@ -12,3 +12,10 @@ document.querySelector(".fa-xmark").addEventListener("click", () => {
   document.querySelector(".t").style.right = "-200px";
   document.querySelector("#mob").style.right = "-200px";
 });
+let header = document.querySelector('.header');
+console.log('ic');
+window.addEventListener("scroll",function() {
+console.log('scroll');
+
+  header.classList.toggle('scroll', window.scrollY > 0);
+})
