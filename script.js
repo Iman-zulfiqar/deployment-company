@@ -19,3 +19,8 @@ console.log('scroll');
 
   header.classList.toggle('scroll', window.scrollY > 0);
 })
+setTimeout(()=>{
+let starter = document.querySelector('.starter');
+
+  starter.classList.add('hide');
+},5000)
