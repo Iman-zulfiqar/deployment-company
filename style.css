@@ -409,6 +409,7 @@ body::-webkit-scrollbar {
   max-width: 1200px;
   width: 100%;
   overflow-x: auto;
+  justify-content: center;
   border-top: 1px solid #678c92;
   border-bottom: 1px solid #678c92;
   padding: 20px;
@@ -875,6 +876,18 @@ body::-webkit-scrollbar {
   }
   .root .haeder-div .navbar .logo {
     gap: 0.5rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .container3 .navbar {
+    justify-content: initial;
+  }
+}
+
+@media (max-width: 11408px) {
+  [data-aos][data-aos][data-aos-delay="2000"].aos-animate, body[data-aos-delay="2000"] [data-aos].aos-animate {
+    transition-delay: 0s !important;
   }
 }
 
