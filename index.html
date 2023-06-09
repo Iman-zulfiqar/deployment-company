@@ -28,10 +28,15 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="starter">
-      <h1>Buildit</h1>
-      <h1>Buildit</h1>
-
+    <div class="loader">
+      <div class="loaderlogo" >
+        <div class="logoSign" data-aos="flip-left"></div>
+        <div>Buildit</div>
+      </div>
+      <div class="loaderlogo"  >
+        <div class="logoSign" data-aos="flip-right"></div>
+        <div>Buildit</div>
+      </div>
     </div>
    
     <div class="root">
@@ -45,13 +50,13 @@
 
           <ul id="mob">
             <i class="fa-solid fa-xmark"></i>
-            <li><a href="#container3">About</a></li>
-            <li><a href="#container2">Services</a></li>
-            <li><a href="#container5">Projects</a></li>
-            <li><a href="#container6">Contect</a></li>
+            <li><a href="#container3 " class="mobli" >About</a></li>
+            <li><a href="#container2 " class="mobli" >Services</a></li>
+            <li><a href="#container5 " class="mobli" >Projects</a></li>
+            <li><a href="#container6 " class="mobli" >Contect</a></li>
           </ul>
 
-          <button class="btn t">Need a project?</button>
+          <button class="btn t ">Need a project?</button>
         </div>
        </div>
       <div class="containe final-el">
@@ -59,9 +64,9 @@
         <div class="home-content">
           <div class="home-text">
             <div>
-              <h1 data-aos="fade-up">Development company</h1>
+              <h1 data-aos="fade-up" data-aos-delay="2000">Development company</h1>
               <br />
-              <p data-aos="fade-up">
+              <p data-aos="fade-up"  data-aos-delay="2000">
                 Forward-thinking real estate developer, owner and investor with
                 a reputation
               </p>
@@ -71,7 +76,7 @@
               <button  class="btn b2">About the company</button>
             </div>
           </div>
-          <div class="home-img" data-aos="fade-left">
+          <div class="home-img" data-aos="fade-left"  data-aos-delay="2000">
             <img src="Photos.png" alt="" />
           </div>
         </div>
@@ -148,7 +153,7 @@
       <div class="container5 final-el">
         <small data-aos="fade-up">Socials</small>
         <h1 data-aos="fade-up">On Instagram</h1>
-        <div class="row">
+        <div class="row" id="scrollContent">
           <img data-aos="zoom-in-down"
             class="col-xxl-4 col-xl-3 col-lg-3 col-md-3 col-sm-3"
             src="Card.png"
@@ -180,7 +185,20 @@
             src="Photo (4).png"
             alt=""
           />
+          <img data-aos="zoom-in-down"
+          class="col-xxl-4 col-xl-3 col-lg-3 col-md-3 col-sm-3"
+          src="Card.png"
+          alt=""
+        />
+        <!-- <img data-aos="zoom-in-down"
+            class="col-xxl-4 col-xl-3 col-lg-3 col-md-3 col-sm-3"
+            src="Photo.png"
+            alt=""
+          />  -->
         </div>
+        <!-- <button class="scroll-button prev-button" onclick="scrollPrev()">&#10094;</button>
+        <button class="scroll-button next-button" onclick="scrollNext()">&#10095;</button> -->
+      
       </div>
     </div>
     <div class="root6" id="container6">
@@ -227,7 +245,7 @@
           <div class="col-12 my-4">
             <label for="">Message </label><br />
             <br />
-            <textarea type="text" style="height: 130px"></textarea>
+            <textarea type="text" style="height: 130px; resize: none;"></textarea>
           </div>
           <button class="col-12 btn">Send message</button>
         </form>
